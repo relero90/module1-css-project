@@ -1,0 +1,27 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: rgb(255, 0, 187);
+}
+
+ul {
+  display: inline;
+  text-align: right;
+  color: #29b47f;
+}
+li {
+  list-style-type: none;
+  margin: 30px;
+  font-size: 20px;
+  display: inline;
+}
+
+#section1 {
+  display: block;
+  margin-top: 100px;
+}
