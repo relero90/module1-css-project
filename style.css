@@ -1,27 +1,51 @@
+/* Sets entire document to Poppins font family */
 * {
   font-family: "Poppins", sans-serif;
 }
-
+/* Pushes body sections down to be visible below floating header
+and declares background color of pale green */
+body {
+  margin-top: 160px;
+  background-color: rgb(41, 180, 127);
+}
+/* Header is 100% width of the viewport,
+fixed position keeps it out of the workflow
+in a position relative to the viewport (top: 0px;) */
 header {
   position: fixed;
   width: 100%;
   top: 0px;
+  text-align: center;
   background-color: rgb(255, 0, 187);
 }
-
-ul {
-  display: inline;
-  text-align: right;
-  color: #29b47f;
-}
+/* Displays the list items as inline elements
+so that they sit next to each other on the screen */
 li {
-  list-style-type: none;
-  margin: 30px;
-  font-size: 20px;
   display: inline;
+  margin: 75px;
+  font-size: 20px;
 }
 
-#section1 {
-  display: block;
-  margin-top: 100px;
+h1 {
+  color: rgb(238, 253, 26);
+}
+
+footer {
+  background-color: rgb(255, 0, 187);
+  color: rgb(238, 253, 26);
+  text-align: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
